@@ -22,14 +22,14 @@ class Program
             Console.Clear();
             DisplayBoard(visibleBoard);
 
-            // Первая карточка
+            
             Console.WriteLine("\nВыберите первую карточку.");
             (int row1, int col1) = GetUserInput(gridSize, revealed);
             visibleBoard[row1, col1] = board[row1, col1];
             Console.Clear();
             DisplayBoard(visibleBoard);
 
-            // Вторая карточка
+            
             Console.WriteLine("\nВыберите вторую карточку.");
             (int row2, int col2) = GetUserInput(gridSize, revealed);
             visibleBoard[row2, col2] = board[row2, col2];
